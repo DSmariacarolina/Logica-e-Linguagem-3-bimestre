@@ -1,0 +1,53 @@
+frutas = ["maçã", "banana", "laranja", "uva", "abacaxi", "melancia", "kiwi", "Pera"]
+notas = [8.5, 7.0, 9.0, 6.5, 10.0]
+# Acessando itens da lista
+terceira_fruta = frutas[2]
+print(f"A terceira fruta é: {terceira_fruta}")
+terceira_nota = notas[2]
+print(f"A Terceira nota é {terceira_nota}")
+print(f"A nota é {notas[2]}")
+
+# Acessando o último item da lista
+ultimo_item_frutas = frutas[-1]
+print(f"O último item da lista de frutas é: {ultimo_item_frutas}")
+penultimo_nota = notas[-2]
+print(f"penultima nota {penultimo_nota}")
+
+# tamanho de uma lista 
+tamanho_frutas = len(frutas)
+print(f"O tamanho da lista de frutas é: {tamanho_frutas}")
+tamanho_notas = len(notas)
+print(f"O tamanho da lista de notas é: {tamanho_notas}")
+
+# Percorendo uma lista com for
+for i in range(len(frutas)):
+    print(f"Fruta na posição {i} é: {frutas[i]}")
+
+# fatiamento de listas
+sub_vetor_frutas = frutas[1:4]
+print(f"Sub vetor de frutas: {sub_vetor_frutas}")
+
+# inserindo um novo item na lista
+frutas.append("Morango")
+print(f"Lista de frutas atualizada: {frutas}")
+frutas.insert(2, "Mamão")
+print(f"Lista de frutas atualizada: {frutas}")
+
+# removendo um item da lista
+frutas.remove("banana")
+print(f"Lista de frutas atualizada: {frutas}")
+del frutas[0]
+print(f"Lista de frutas atualizada: {frutas}")
+
+# Matrizes (listas de listas)
+# ' ' representa um espaço vazio
+jogo_da_velha = [
+    ['X', 'O', 'X'],  # Linha 0
+    ['O', 'X', 'O'],  # Linha 1
+    ['O', ' ', 'X']   # Linha 2
+]
+print(f"Jogo da velha: {jogo_da_velha}")
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  # 3x3
+print(f"Matriz: {matriz}")
+elemento_matriz = matriz[1][2]  # Acessando o elemento 6
+print(f"Elemento na posição [1][2] da matriz: {elemento_matriz}")
